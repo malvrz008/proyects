@@ -1,0 +1,158 @@
+<div class="content-wrapper" style="min-height: 833px;">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Configuración</font>
+            </font>
+          </h1>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card">
+            <div class="card-header d-flex p-0">
+              <ul class="nav nav-pills ml-auto p-2">
+                <li class="nav-item">
+                  <a class="nav-link active show" href="#general" data-toggle="tab">General</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tab_2" data-toggle="tab">
+                    <i class="fa fa-plus "></i> Nuevo</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="general">
+                  <form action="">
+                    <div class="col-md-12">
+                      <h4>Empresa</h4>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="razonSocial">Nombre o Razón Social</label>
+                          <input class="form-control" type="text" name="razonSocialEmpresa" id="razonSocial" placeholder="Ingrese un Nombre o Razón Social">
+                        </div>
+                        <div class="form-group">
+                          <label for="dniEmpresa">DNI o Identificación</label>
+                          <input class="form-control" type="text" name="dniEmpresa" id="dniEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                        <div class="form-group">
+                          <label for="direccionEmpresa">Dirección</label>
+                          <input class="form-control" type="text" name="direccionEmpresa" id="direccionEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="telefonoEmpresa">Teléfono</label>
+                          <input class="form-control" type="tel" name="telefonoEmpresa" id="telefonoEmpresa" placeholder="Ingrese un Teléfono">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailEmpresa">Email</label>
+                          <input class="form-control" type="text" name="emailEmpresa" id="emailEmpresa" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="logoEmpresa">Logo de Empresa
+                            <span style="color: red">*Opcional</span>
+                          </label>
+                          <input class="form-control" type="file" name="logoEmpresa" id="logoEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="razonSocial">Nombre o Razón Social</label>
+                          <input class="form-control" type="text" name="razonSocialEmpresa" id="razonSocial" placeholder="Ingrese un Nombre o Razón Social">
+                        </div>
+                        <div class="form-group">
+                          <label for="dniEmpresa">DNI o Identificación</label>
+                          <input class="form-control" type="text" name="dniEmpresa" id="dniEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                        <div class="form-group">
+                          <label for="direccionEmpresa">Dirección</label>
+                          <input class="form-control" type="text" name="direccionEmpresa" id="direccionEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="telefonoEmpresa">Teléfono</label>
+                          <input class="form-control" type="tel" name="telefonoEmpresa" id="telefonoEmpresa" placeholder="Ingrese un Teléfono">
+                        </div>
+                        <div class="form-group">
+                          <label for="emailEmpresa">Email</label>
+                          <input class="form-control" type="text" name="emailEmpresa" id="emailEmpresa" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <label for="logoEmpresa">Logo de Empresa
+                            <span style="color: red">*Opcional</span>
+                          </label>
+                          <input class="form-control" type="file" name="logoEmpresa" id="logoEmpresa" placeholder="DNI o Identificación">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                  <form action="">
+                    <div class="col-md-8 offset-2">
+                      <div class="form-group">
+                        <label for="nombreSucursal">Nombre</label>
+                        <input class="form-control" id="nombreSucursal" placeholder="Ingrese un nombre" type="text">
+                      </div>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label>Región</label>
+                          <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Caracas</option>
+                            <option value="1">Zulia</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="direccionSucursal">Dirección</label>
+                        <input class="form-control" id="direccionSucursal" placeholder="Ingrese una Dirección" type="text">
+                      </div>
+                      <div class="from-gorup">
+                        <label for="observacionSucursal">Observación</label>
+                        <textarea class="form-control" name="observacionSucursal" id="observacionSucursal" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <a class="btn btn-primary pull-left" style="color: white">Guardar</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+
+  </section>
+  <!-- /.content -->
+</div>
