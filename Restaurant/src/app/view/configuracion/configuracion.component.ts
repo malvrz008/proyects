@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const $;
 
 @Component({
   selector: 'app-configuracion',
@@ -9,7 +10,12 @@ export class ConfiguracionComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    $(document).ready(function () {
+
+      $('.js-example-basic-single').select2();
+    });
+
   }
 
 }

@@ -29,14 +29,14 @@
                   <a class="nav-link active show" href="#general" data-toggle="tab">General</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#tab_2" data-toggle="tab">
-                    <i class="fa fa-plus "></i> Nuevo</a>
+                  <a class="nav-link" href="#finansa" data-toggle="tab">Finansa</a>
                 </li>
               </ul>
             </div>
             <!-- /.card-header -->
             <div class="card-body">
               <div class="tab-content">
+                <!-- General -->
                 <div class="tab-pane active show" id="general">
                   <form action="">
                     <div class="col-md-12">
@@ -75,67 +75,89 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-md-12">
+                      <h4>Sistema</h4>
+                    </div>
+                    <hr>
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="razonSocial">Nombre o Razón Social</label>
-                          <input class="form-control" type="text" name="razonSocialEmpresa" id="razonSocial" placeholder="Ingrese un Nombre o Razón Social">
-                        </div>
-                        <div class="form-group">
-                          <label for="dniEmpresa">DNI o Identificación</label>
-                          <input class="form-control" type="text" name="dniEmpresa" id="dniEmpresa" placeholder="DNI o Identificación">
-                        </div>
-                        <div class="form-group">
-                          <label for="direccionEmpresa">Dirección</label>
-                          <input class="form-control" type="text" name="direccionEmpresa" id="direccionEmpresa" placeholder="DNI o Identificación">
+                          <label>País</label>
+                          <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Chile</option>
+                            <option value="1">Venezuela</option>
+                          </select>
                         </div>
                       </div>
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label for="telefonoEmpresa">Teléfono</label>
-                          <input class="form-control" type="tel" name="telefonoEmpresa" id="telefonoEmpresa" placeholder="Ingrese un Teléfono">
-                        </div>
-                        <div class="form-group">
-                          <label for="emailEmpresa">Email</label>
-                          <input class="form-control" type="text" name="emailEmpresa" id="emailEmpresa" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                          <label for="logoEmpresa">Logo de Empresa
-                            <span style="color: red">*Opcional</span>
-                          </label>
-                          <input class="form-control" type="file" name="logoEmpresa" id="logoEmpresa" placeholder="DNI o Identificación">
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-                <!-- /.tab-pane -->
-                <div class="tab-pane" id="tab_2">
-                  <form action="">
-                    <div class="col-md-8 offset-2">
-                      <div class="form-group">
-                        <label for="nombreSucursal">Nombre</label>
-                        <input class="form-control" id="nombreSucursal" placeholder="Ingrese un nombre" type="text">
-                      </div>
-                      <div class="form-group">
-                        <div class="form-group">
-                          <label>Región</label>
+                          <label>Zona Horaria</label>
                           <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
                             <option disabled>-- seleccione --</option>
-                            <option value="0">Caracas</option>
-                            <option value="1">Zulia</option>
+                            <option value="0"> UTC-4 Santiago - Chile</option>
+                            <option value="1">UTC-4 Caracas - Venezuela</option>
                           </select>
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label for="direccionSucursal">Dirección</label>
-                        <input class="form-control" id="direccionSucursal" placeholder="Ingrese una Dirección" type="text">
+                    </div>
+                    <div class="col-md-12">
+                      <a class="btn btn-primary pull-left" style="color: white">Guardar</a>
+                    </div>
+                  </form>
+                </div>
+                <!-- Fin General -->
+                <!-- Finansa -->
+                <div class="tab-pane" id="finansa">
+                  <form action="">
+                    <div class="col-md-12">
+                      <h4>Inpuestos y Monedas</h4>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="direccionSucursal">Inpuesto al Valor Agregado (Iva%)</label>
+                          <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Iva" id="direccionSucursal" name="direccionSucursal">
+                            <div class="input-group-append">
+                              <span class="input-group-text">
+                                <i class="fas fa-percentage"></i>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label>Moneda Nacional</label>
+                          <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Peso Chileno - CLP</option>
+                            <option value="1">Bolivares - Venezuela</option>
+                          </select>
+                        </div>
                       </div>
-                      <div class="from-gorup">
-                        <label for="observacionSucursal">Observación</label>
-                        <textarea class="form-control" name="observacionSucursal" id="observacionSucursal" cols="30" rows="10" placeholder="Escribe aquí..."></textarea>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Moneda Internacional</label>
+                          <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Dalar Estados Unidos - USD</option>
+                            <option value="1">Euro</option>
+                            <option value="1">Libra</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>Moneda Digital</label>
+                          <select class="js-example-basic-single form-control" name="region" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Bitcoin</option>
+                            <option value="1">Ether</option>
+                            <option value="1">Dash</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
+
                     <div class="col-md-12">
                       <a class="btn btn-primary pull-left" style="color: white">Guardar</a>
                     </div>
