@@ -8,6 +8,8 @@ import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SucursalComponent } from './view/sucursal/sucursal.component';
 import { ConfiguracionComponent } from './view/configuracion/configuracion.component';
+import { CategoriaInsumoComponent } from './view/categoria-insumo/categoria-insumo.component';
+import { InsumoComponent } from './view/insumo/insumo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ConfiguracionComponent } from './view/configuracion/configuracion.compo
     FooterComponent,
     SidebarComponent,
     SucursalComponent,
-    ConfiguracionComponent
+    ConfiguracionComponent,
+    CategoriaInsumoComponent,
+    InsumoComponent,
   ],
   imports: [
     BrowserModule,

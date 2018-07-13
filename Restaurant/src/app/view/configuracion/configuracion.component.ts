@@ -15,18 +15,6 @@ export class ConfiguracionComponent implements OnInit {
 
       $('.js-example-basic-single').select2();
 
-      $('#tabla_categoria_Insumo').DataTable({
-        'language': {
-          'url': '../../../assets/plugins/datatables/idioma.json'
-        }
-      });
-
-      $('#tabla_Insumo').DataTable({
-        'language': {
-          'url': '../../../assets/plugins/datatables/idioma.json'
-        }
-      });
-
     });
 
   }

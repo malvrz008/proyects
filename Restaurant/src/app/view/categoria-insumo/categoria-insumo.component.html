@@ -1,0 +1,131 @@
+<div class="content-wrapper" style="min-height: 833px;">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Categoria de Insumos</font>
+            </font>
+          </h1>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card">
+            <div class="card-header d-flex p-0">
+              <ul class="nav nav-pills ml-auto p-2">
+                <li class="nav-item">
+                  <a class="nav-link active show" href="#tab_1" data-toggle="tab">Ver lista</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tab_2" data-toggle="tab">
+                    <i class="fa fa-plus "></i> Nuevo</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab_1">
+                  <div class="col-md-12">
+                    <h4> Lista de Categoria</h4>
+                  </div>
+                  <hr>
+                  <table id="tabla_categoriaInsumo" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Opción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Verduras</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              Opción
+                              <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                              <a class="dropdown-item" href="#">Editar</a>
+                              <a class="dropdown-item" href="#">Eliminar</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Carnes</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              Opción
+                              <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                              <a class="dropdown-item" href="#">Editar</a>
+                              <a class="dropdown-item" href="#">Eliminar</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Bebidas</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              Opción
+                              <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                              <a class="dropdown-item" href="#">Editar</a>
+                              <a class="dropdown-item" href="#">Eliminar</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                  <form action="">
+                    <div class="col-md-12">
+                      <h4>Nueva Categoria</h4>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <label for="nombreCategoriaInsumo">Nombre</label>
+                      <input class="form-control" type="text" name="nombreCategoriaInsumo" id="nombreCategoriaInsumo" placeholder="Ingrese un Nombre">
+                    </div>
+                    <div class="col-md-12">
+                      <a class="btn btn-primary pull-left" style="color: white;">Guardar</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+
+  </section>
+  <!-- /.content -->
+</div>

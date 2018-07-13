@@ -1,0 +1,154 @@
+<div class="content-wrapper" style="min-height: 833px;">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0 text-dark">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Insumo</font>
+            </font>
+          </h1>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.content-header -->
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card">
+            <div class="card-header d-flex p-0">
+              <ul class="nav nav-pills ml-auto p-2">
+                <li class="nav-item">
+                  <a class="nav-link active show" href="#tab_1" data-toggle="tab">Ver lista</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tab_2" data-toggle="tab">
+                    <i class="fa fa-plus "></i> Nuevo</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active show" id="tab_1">
+                  <div class="col-md-12">
+                    <h4> Lista de Insumos</h4>
+                  </div>
+                  <hr>
+                  <table id="tabla_insumo" class="table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>Categoria</th>
+                        <th>Unidad</th>
+                        <th>Medida</th>
+                        <th>Cantidad/Medida</th>
+                        <th>Opción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Coca-cola</td>
+                        <td>Bebida</td>
+                        <td>Lata</td>
+                        <td>ml</td>
+                        <td>250</td>
+                        <td>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                              Opción
+                              <span class="caret"></span>
+                            </button>
+                            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
+                              <a class="dropdown-item" href="#">Editar</a>
+                              <a class="dropdown-item" href="#">Eliminar</a>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- /.tab-pane -->
+                <div class="tab-pane" id="tab_2">
+                  <form action="">
+                    <div class="col-md-12">
+                      <h4>Nuevo Insumo</h4>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="nombreInsumo">Nombre</label>
+                          <input class="form-control" type="text" name="nombreInsumo" id="nombreInsumo" placeholder="Ingrese un Nombre">
+                        </div>
+                        <div class="form-group">
+                          <label for="unidad">Unidad</label>
+                          <select class="js-example-basic-single form-control" name="unidad" id="unidad" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Lata</option>
+                            <option value="1">Unidad</option>
+                            <option value="1">Bolsa</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="cantidadMedida">Cantidad / Medida</label>
+                          <input class="form-control" type="text" name="cantidadMedida" id="cantidadMedida" placeholder="Ingrese una Cantidad">
+                        </div>
+                        <div class="form-group">
+                          <label for="precioSugerido">Precio Sugerido</label>
+                          <input class="form-control" type="text" name="precioSugerido" id="precioSugerido" placeholder="Ingrese un Precio">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="unidad">Categoria</label>
+                          <select class="js-example-basic-single form-control" name="unidad" id="unidad" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">Verduras</option>
+                            <option value="1">Carnes</option>
+                            <option value="1">Bebidas</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="unidad">Medida</label>
+                          <select class="js-example-basic-single form-control" name="unidad" id="unidad" style="width: 100%;">
+                            <option disabled>-- seleccione --</option>
+                            <option value="0">ml</option>
+                            <option value="1">gr</option>
+                            <option value="1">Litros</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="stockMinimo">Stock Minimo</label>
+                          <input class="form-control" type="text" name="stockMinimo" id="stockMinimo" placeholder="Ingrese un Minimo">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <a class="btn btn-primary pull-left" style="color: white;">Guardar</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- /.tab-content -->
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </div>
+
+  </section>
+  <!-- /.content -->
+</div>
